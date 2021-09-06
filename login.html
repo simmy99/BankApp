@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>login page</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+         <script src="transaction.js"></script>
+         <style>
+            body {
+                background-image: url("picdebit.jpg");
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-top: 20px;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <h3>Welcome To STAR BANK</h3>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <div class="form-group"><br>
+                            <label for="acno">User Name</label>
+                            <input type="text" class="form-control" id="acno">
+                            <small id="acnoHelp" class="form-text text-muted">We'll never share your Account Number with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password</label>
+                            <input type="password" class="form-control" id="pwd">
+                         </div>
+                        <button type="button" class="btn btn-primary" onclick="Bank.login()">Submit</button><br><br>
+                        <span style="color:rgb(255, 0, 0);font-size:12px;" class="psw">Forgot Your <a href="#">password?</a></span><br><br>
+                        <span style="color:rgb(255, 0, 0);font-size:12px;" class="psw">New User? Please <a href="registration.html" >Register Now</a></span><br><br>
+                        <span style="color:#ff0000;font-size:12px;" class="psw">Back to <a href="home.html">Home</a></span>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

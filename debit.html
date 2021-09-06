@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debit</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="transaction.js"></script>
+    <link rel="stylesheet" href="balance.css">
+</head>
+<body>
+<div class="container">
+<center>
+    <div class="col"><br>
+        <h3>WithDraw</h3>
+        <table>
+            <tr>
+                <td>Accno</td>
+                <td><input type="text" id="wacno"></td>
+            </tr>
+            <tr>
+                <td>Pin</td>
+                <td><input type="text" id="wpin"></td>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td><input type="text" id="wamt"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" onclick="Bank.withdraw()" value="Withdarw"></td>
+            </tr>
+         </table>
+         <span style="color:rgb(15, 14, 14);font-size:12px;" class="psw">Back To <a href="userhome.html" >Home</a></span><br><br>
+    </div>
+</center></div>
+</body>
+</html>

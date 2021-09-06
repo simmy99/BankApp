@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+        background-image: url(pic.jpg);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 20px;
+    }
+    div.container {border-style: ridge;}
+    .container {
+        width: 406px;
+        max-width: 406px;
+        margin: 0 auto;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+<center>
+<h1>Registration Form</h1>
+    <form>
+        <label for="fname" >name:</label>
+        <input type="text" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" name="lname"><br><br>
+        <label for="address">Address:</label>
+        <textarea cols="30" rows="4" name="address"></textarea><br><br>
+        <label for="age">Age:</label>
+        <input type="text" name="age"><br><br>
+        <label>Genger:</label>
+        <input type="radio" name="male">Male 
+        <input type="radio" name="female">Female 
+        <input type="radio" name="other">Other<br><br>
+        <label for="phone">Ph:</label>
+        <input type="text" name="phone"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email" ><br><br>
+        <label for="username">UserName:</label>
+        <input type="text" name="username"><br><br>
+        <label for="psw">Password :</label>
+        <input type="text" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
+        <input type="button" value="Register"><br><br>
+        <span style="color:rgb(255, 0, 0);font-size:13px;" class="psw">Already registered user? Please <a href="login.html">Login Now</a></span><br><br>
+        <span style="color:rgb(255, 0, 0);font-size:13px;" class="psw">Back to <a href="home.html">Home</a></span>
+    </form>
+</center></div>
+</body>
+</html>
